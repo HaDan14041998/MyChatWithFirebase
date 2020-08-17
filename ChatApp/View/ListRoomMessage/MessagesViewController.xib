@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessagesViewController" customModule="ChatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="messageCollectionView" destination="ljG-T7-gR2" id="00T-Zz-lyF"/>
+                <outlet property="messagesTableView" destination="bxR-9m-XMB" id="PLh-Pp-eEo"/>
+                <outlet property="view" destination="iOR-vD-b7h" id="Kod-Qa-iKY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iOR-vD-b7h">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ljG-T7-gR2">
+                    <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="axm-iX-jph"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6fP-7w-dEf">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bxR-9m-XMB">
+                    <rect key="frame" x="0.0" y="152" width="414" height="710"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92146831750000002" green="0.92162638900000005" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ljG-T7-gR2" firstAttribute="leading" secondItem="dHd-6I-dDT" secondAttribute="leading" id="CtV-iQ-o09"/>
+                <constraint firstItem="ljG-T7-gR2" firstAttribute="top" secondItem="dHd-6I-dDT" secondAttribute="top" id="PuV-V6-5bh"/>
+                <constraint firstItem="dHd-6I-dDT" firstAttribute="trailing" secondItem="bxR-9m-XMB" secondAttribute="trailing" id="YpR-2k-CuD"/>
+                <constraint firstItem="bxR-9m-XMB" firstAttribute="leading" secondItem="dHd-6I-dDT" secondAttribute="leading" id="ZQc-AJ-aCk"/>
+                <constraint firstItem="dHd-6I-dDT" firstAttribute="trailing" secondItem="ljG-T7-gR2" secondAttribute="trailing" id="k6T-Ps-MkD"/>
+                <constraint firstItem="bxR-9m-XMB" firstAttribute="top" secondItem="ljG-T7-gR2" secondAttribute="bottom" constant="8" id="pOc-HC-GVc"/>
+                <constraint firstItem="bxR-9m-XMB" firstAttribute="bottom" secondItem="dHd-6I-dDT" secondAttribute="bottom" id="sy4-hv-qYI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="dHd-6I-dDT"/>
+            <point key="canvasLocation" x="577" y="46"/>
+        </view>
+    </objects>
+</document>
